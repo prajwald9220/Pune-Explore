@@ -1,13 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/puneExplore')
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("✅ MongoDB Connected..."))
     .catch(err => console.log("❌ Connection Error:", err));
 
@@ -35,6 +36,7 @@ app.post('/contact', async(req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log("🚀 Server running on port 5000");
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🚀 Server running on port ${PORT}`);
 });
