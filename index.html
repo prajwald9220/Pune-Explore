@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="responsive.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Explore - Cultural Capital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <nav class="navbar glass">
+        <span>
+            <a href="#home" style="display: flex; align-items: center">
+                <img src="img/logo.jpeg" width="105" style="margin-right: 10px">
+                <h1 class="logo">PUNE EXPLORE</h1>
+            </a>
+        </span>
+        <ul class="nav-links">
+            <li><a href="#home">🏠Home</a></li>
+            <li><a href="#forts">♖Forts</a></li>
+            <li><a href="#historical">⏳Historicals</a></li>
+            <li><a href="#hill_stations">ᨒHill Station</a></li>
+            <li><a href="#spiritual">🪷Spiritual</a></li>
+            <li><a href="#contact">☎︎Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h2>Experience the Heritage of Pune District</h2>
+            <div class="line"></div>
+            <h1>THE CULTURAL CAPITAL</h1>
+            <a href="#forts" class="ctn">Explore Now</a>
+        </div>
+    </header>
+
+    <section class="events" id="forts">
+        <div class="container">
+            <div class="title">
+                <h1>Iconic Forts</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" src="img/sinhagad.jpg" alt="Sinhagad">
+                    <h4>Sinhagad Fort</h4>
+                    <p>Known for the legendary battle of Tanaji Malusare. Famous for its Pithla-Bhakri.</p>
+                    <a href="sinhagad_details.html" class="ctn">All Details</a>
+                </article>
+                <article class="card col">
+                    <img class="card-img" src="img/rajgad.jpg" alt="Rajgad">
+                    <h4>Rajgad Fort</h4>
+                    <p>The first capital of the Maratha Empire. A king of all forts in Maharashtra.</p>
+                    <a href="rajgad_details.html" class="ctn">All Details</a>
+                </article>
+                <article class="card col">
+                    <img class="card-img" src="img/lohagad.jpg" alt="Lohagad">
+                    <h4>Lohagad Fort</h4>
+                    <p>An iron fort near Lonavala, famous for its strong architecture.</p>
+                    <a href="lohagad_details.html" class="ctn">All Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="historical">
+        <div class="container">
+            <div class="title">
+                <h1 class="dark">Historical Places</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" src="img/shaniwarwada.jpg" />
+                    <h4 class="dark">Shaniwar Wada</h4>
+                    <p class="font-color">The historical seat of the Peshwas of the Maratha Empire.</p>
+                    <a href="shaniwarwada_details.html" class="ctn">All Details</a>
+                </article>
+                <article class="card col">
+                    <img class="card-img" src="img/agakhan.jpg" />
+                    <h4 class="dark">Aga Khan Palace</h4>
+                    <p class="font-color">Built in 1892, it's a majestic building with great historical charm.</p>
+                    <a href="agakhan_palace.html" class="ctn">All Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="hill_stations">
+        <div class="container">
+            <div class="title">
+                <h1 class="dark">Hill Stations</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" src="img/lonavala.jpg" />
+                    <h4 class="dark">Lonavala & Khandala</h4>
+                    <p class="font-color">Famous twin hill stations known for lush greenery and waterfalls.</p>
+                    <a href="lonavala_khandala.html" class="ctn">All Details</a>
+                </article>
+                <article class="card col">
+                    <img class="card-img" src="img/mulshidam.jpg" />
+                    <h4 class="dark">Mulshi Dam</h4>
+                    <p class="font-color">A serene spot for camping and nature lovers.</p>
+                    <a href="mulshi_dam.html" class="ctn">All Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="spiritual">
+        <div class="container">
+            <div class="title">
+                <h1 class="dark">Spiritual Pune</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <article class="card col">
+                    <img class="card-img" src="img/dagdusheth.jpg" />
+                    <h4 class="dark">Dagdusheth Ganpati</h4>
+                    <p class="font-color">The most famous Ganesh temple in Pune.</p>
+                    <a href="dagdusheth.html" class="ctn">All Details</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="title">
+            <h1>Contact Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form class="cform" onsubmit="submitForm(); return false;">
+                <input type="text" id="name" placeholder="Your Full Name" required minlength="8">
+                <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@gmail\.com$" title="Please enter a valid @gmail.com address" required>
+                <textarea id="message" placeholder="Your Message" style="height: 100px" required></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

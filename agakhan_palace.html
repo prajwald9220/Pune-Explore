@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Explore - Aga Khan Palace</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 0;
+        }
+        
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #ff1c4b;
+        }
+        
+        .main-title-section {
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+        
+        .main-title {
+            font-size: 40px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .underline {
+            width: 150px;
+            height: 4px;
+            background-color: #ff1c4b;
+            margin: 0 auto;
+        }
+        
+        .top-section {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        
+        .img-container img {
+            width: 500px;
+            border-radius: 15px;
+            display: block;
+        }
+        
+        .history-box {
+            flex: 1;
+        }
+        
+        .history-box h2 {
+            font-size: 28px;
+            margin: 0 0 15px 0;
+        }
+        
+        .history-box p {
+            line-height: 1.6;
+            color: #ccc;
+            font-size: 18px;
+        }
+        
+        .info-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .info-box {
+            flex: 1;
+            background: #0a0a0a;
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 5px solid #ff1c4b;
+        }
+        
+        .box-title {
+            color: #ff1c4b;
+            margin: 0 0 20px 0;
+            font-size: 22px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            color: #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        li b {
+            color: #ff1c4b;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        .guide-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #222;
+            font-size: 17px;
+        }
+        
+        .guide-label {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .guide-value {
+            color: #ccc;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #ff1c4b;
+            color: #fff !important;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 50px;
+            transition: 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: #00acee !important;
+            color: #fff !important;
+        }
+        
+        @media (max-width: 800px) {
+            .top-section,
+            .info-grid {
+                flex-direction: column;
+            }
+            .img-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="nav-link">Back to Home</a>
+        </header>
+
+        <section class="main-title-section">
+            <h1 class="main-title">Aga Khan Palace: A Memorial of History</h1>
+            <div class="underline"></div>
+        </section>
+
+        <main>
+            <section class="top-section">
+                <div class="img-container">
+                    <img src="img/agakhan.jpg" alt="Aga Khan Palace">
+                </div>
+                <div class="history-box">
+                    <h2>History</h2>
+                    <p>
+                        Built in 1892 by Sultan Muhammed Shah Aga Khan III, this palace is a majestic monument. It is famously known as the place where Mahatma Gandhi, Kasturba Gandhi and Mahadev Desai were imprisoned during the Quit India Movement in 1942. Today, it stands
+                        as a Gandhi National Memorial, surrounded by beautiful Italian arches and sprawling lawns.
+                    </p>
+                </div>
+            </section>
+
+            <section class="info-grid">
+                <div class="info-box">
+                    <h3 class="box-title">Major Attractions</h3>
+                    <ul>
+                        <li><b>▶</b> <strong>Gandhi Memorial:</strong> Museum with Gandhi ji's personal items.</li>
+                        <li><b>▶</b> <strong>The Samadhis:</strong> Memorials of Kasturba Gandhi and Mahadev Desai.</li>
+                        <li><b>▶</b> <strong>Architecture:</strong> Beautiful Italian-style arches and gardens.</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="box-title">Visitor's Guide</h3>
+                    <div class="guide-item"><span class="guide-label">Best Time:</span><span class="guide-value">Morning (9:00 AM - 11:00 AM)</span></div>
+                    <div class="guide-item"><span class="guide-label">Timings:</span><span class="guide-value">9:00 AM to 5:30 PM</span></div>
+                    <div class="guide-item"><span class="guide-label">Location:</span><span class="guide-value">Yerwada, Pune</span></div>
+                </div>
+            </section>
+
+            <a href="index.html" class="back-btn">Go Back Home</a>
+        </main>
+    </div>
+</body>
+
+</html>
