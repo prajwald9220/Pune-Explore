@@ -20,7 +20,7 @@ document.querySelector('form').addEventListener('submit', async(e) => {
         });
 
         if (response.ok) {
-            alert("Thank You! Data with Date/Time saved.");
+            alert("Thank You! Your message has been sent to Pune Explore.");
             window.location.href = "index.html";
             document.querySelector('form').reset();
         }

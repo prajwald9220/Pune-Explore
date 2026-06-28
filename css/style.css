@@ -94,22 +94,22 @@ header {
 
 .title {
     text-align: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .title h1 {
     font-size: 36px;
     color: white;
-    margin-bottom: 5px; 
-    display: inline-block; 
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .title .line {
-    width: 150px;      
-    height: 4px;      
-    background: #ff0055; 
-    margin: 0 auto;     
-    border-radius: 2px; 
+    width: 150px;
+    height: 4px;
+    background: #ff0055;
+    margin: 0 auto;
+    border-radius: 2px;
 }
 
 .row {
@@ -178,16 +178,28 @@ header {
     border: 1px solid #333;
     color: #fff;
     border-radius: 5px;
+    resize: none;
 }
 
-.crow-s {
+#submitBtn {
     background: #ff0055;
     cursor: pointer;
     border: none;
     font-weight: bold;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
+#submitBtn:hover {
+    background: #1697d2;
+}
+
+
 /* 1. Animation define */
+
 @keyframes slideUp {
     0% {
         opacity: 0;
@@ -205,8 +217,8 @@ header {
 
 .header-content h1 {
     animation: slideUp 1.2s ease-out forwards;
-    animation-delay: 0.3s; 
-    opacity: 0; 
+    animation-delay: 0.3s;
+    opacity: 0;
 }
 
 .header-content .line {
@@ -271,16 +283,21 @@ header {
     border-bottom: 1px solid #333;
 }
 
+
 /* Rajgad Details below*/
 
+
 /* Container padding */
+
 .details-container {
     padding: 80px 8%;
     background-color: #000;
     color: #fff;
 }
 
+
 /* Image and History Layout */
+
 .main-info {
     display: flex;
     align-items: flex-start;
@@ -303,10 +320,12 @@ header {
     font-size: 18px;
 }
 
+
 /* Grid for bottom boxes */
+
 .details-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
@@ -314,7 +333,7 @@ header {
     background: #111;
     padding: 30px;
     border-radius: 10px;
-    border-left: 5px solid #ff0055; 
+    border-left: 5px solid #ff0055;
 }
 
 .pink-text {
@@ -322,7 +341,9 @@ header {
     margin-bottom: 20px;
 }
 
+
 /* Table Style */
+
 .guide-table {
     width: 100%;
 }
@@ -332,9 +353,12 @@ header {
     border-bottom: 1px solid #333;
 }
 
+
 /* Mobile Responsive */
+
 @media (max-width: 768px) {
-    .main-info, .details-grid {
+    .main-info,
+    .details-grid {
         flex-direction: column;
         grid-template-columns: 1fr;
     }
@@ -343,12 +367,69 @@ header {
 .footer-button {
     width: 100%;
     display: flex;
-    justify-content: flex-start; 
-    padding-left: 5px;           
+    justify-content: flex-start;
+    padding-left: 5px;
 }
 
 .ctn {
     display: inline-block;
     padding: 8px 20px;
     width: auto;
+}
+
+
+/* Connect Social Media */
+
+.footer-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.footer-content a {
+    color: #ff0055;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+
+/* Location Button*/
+
+.location-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 15px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid #ffffff;
+    cursur: pointer;
+}
+
+.location-btn:hover {
+    background: #ff1c4b;
+    color: #ffffff;
+    border-color: #ff1c4b;
 }

@@ -1,42 +1,41 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-require('dotenv').config();
-
 const app = express();
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log("✅ MongoDB Connected..."))
-    .catch(err => console.log("❌ Connection Error:", err));
+mongoose.connect('mongodb://localhost:27017/puneExploreDB')
+    .then(() => console.log('✅ MongoDB Compass se connect ho gaya hai!'))
+    .catch((err) => console.error('❌ MongoDB connection error:', err));
 
 const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
     message: String,
-    date: {
-        type: String,
-        default: () => new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
-    }
+    date: String
 });
 
 const Contact = mongoose.model('Contact', contactSchema);
 
 app.post('/contact', async(req, res) => {
     try {
-        const newContact = new Contact(req.body);
+        const newContact = new Contact({
+            name: req.body.name,
+            email: req.body.email,
+            message: req.body.message,
+            date: req.body.date
+        });
+
         await newContact.save();
-        console.log("📥 Naya Data Aaya:", req.body);
-        res.status(200).send("Data saved successfully!");
-    } catch (err) {
-        console.log("❌ Save Error:", err);
-        res.status(500).send("Error saving data");
+        res.status(200).json({ message: 'Success! Data MongoDB mein save ho gaya.' });
+    } catch (error) {
+        res.status(500).json({ error: 'Data save nahi ho paya.' });
     }
 });
 
-const PORT = process.env.PORT || 10000;
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 Server running on port ${PORT}`);
+const PORT = 5000;
+app.listen(PORT, () => {
+    console.log(`🚀 Server running on http://localhost:${PORT}`);
 });

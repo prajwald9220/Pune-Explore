@@ -4,15 +4,24 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "nodemon server.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "cors": "^2.8.5",
+        "cors": "^2.8.6",
         "dotenv": "^16.4.5",
-        "express": "^4.19.2",
-        "mongoose": "^8.3.2"
-    }
+        "express": "^4.22.1",
+        "mongoose": "^8.23.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/prajwald9220/Pune-Explore.git"
+    },
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/prajwald9220/Pune-Explore/issues"
+    },
+    "homepage": "https://github.com/prajwald9220/Pune-Explore#readme"
 }
