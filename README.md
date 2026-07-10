@@ -1,4 +1,4 @@
-# 🚀 Pune Explore – Full-Stack Tourism Web Application
+# 🚀 Pune Explore – Full Stack Tourism Web Application
 
 ### 🌐 Live Web Application URL
 👉 **[Click Here to Explore the Live Web Page](https://pune-explore-prajwal.netlify.app/)**
@@ -50,14 +50,14 @@ Travelling Enjoyment/
 ```
 
 ### 5. Module Explanation 
-* **Frontend Core (HTML/CSS)**: Renders the static layouts and coordinates custom styling, modern typography, and hover states for the visual elements.
-* **Client-Side Logic (script.js)**: Handles user interactions, manages state transitions dynamically, and connects UI hooks to specific data triggers.
-* **Backend Engine (server.js)**: Serves as the central pipeline that establishes the Express server, intercepts network requests, and securely bridges data workflows.
+* **Frontend Core (HTML/CSS)**: Renders the static layouts and coordinates custom styling, modern typography and hover states for the visual elements.
+* **Client-Side Logic (script.js)**: Handles user interactions, manages state transitions dynamically and connects UI hooks to specific data triggers.
+* **Backend Engine (server.js)**: Serves as the central pipeline that establishes the Express server, intercepts network requests and securely bridges data workflows.
 * **Modular Views (Destination Pages)**: Serves dedicated content wrappers dynamically structured for distinct landmark profiles across Pune.
 
 ### 7. Database Used 
 * Database Management System: MongoDB
-* Implementation Details: The application connects to a MongoDB cluster to store, update, and dynamically retrieve essential structural data, route logs, and location analytics seamlessly.
+* Implementation Details: The application connects to a MongoDB cluster to store, update and dynamically retrieve essential structural data, route logs and location analytics seamlessly.
 
 ### 8. How to Run the Project 
 * **Clone the repository**:
