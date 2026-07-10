@@ -1,28 +1,29 @@
-🚀 Pune Explore – Full-Stack Tourism Web Application
+# 🚀 Pune Explore – Full-Stack Tourism Web Application
 
-🌐 Live Web Application URL
-👉 [Click Here to Explore the Live Web Page](https://pune-explore-prajwal.netlify.app/)
+### 🌐 Live Web Application URL
+👉 **[Click Here to Explore the Live Web Page](https://pune-explore-prajwal.netlify.app/)**
 
-1. Overview -
-Pune Explore is an interactive full-stack web application designed to guide travelers through Pune's iconic destinations. The project
-solves the problem of scattered tourist information by providing a comprehensive, structured guide for Iconic Forts, Historical Places,
-Hill Stations and Spiritual Pune. It features a modern, responsive user experience backed by dynamic routing and scalable backend tracking.
+### 1. Overview -
+Pune Explore is an interactive full-stack web application designed to guide travelers through Pune's iconic destinations. The project solves the problem of scattered tourist information by providing a comprehensive, structured guide for **Iconic Forts, Historical Places, Hill Stations and Spiritual Pune**. It features a modern, responsive user experience backed by dynamic routing and scalable backend tracking.
 
-2. Features -
-i) Interactive Dynamic UI: Features a premium dark-themed interface optimized for both desktop and mobile layouts.
-ii) Component-Level Custom Styling: Implements custom-built interactive location buttons with smooth animated transition effects.
-iii) Smart Navigation System: Clean and structured multi-page routing allowing users to dive deep into specific location details seamlessly.
-iv) Full-Stack Integration: Real-time communication between backend routes, API endpoints, and a cloud database schema.
+### 2. Features -
+* **i) Interactive Dynamic UI:** Features a premium dark-themed interface optimized for both desktop and mobile layouts.
+* **ii) Component-Level Custom Styling:** Implements custom-built interactive location buttons with smooth animated transition effects.
+* **iii) Smart Navigation System:** Clean and structured multi-page routing allowing users to dive deep into specific location details seamlessly.
+* **iv) Full-Stack Integration:** Real-time communication between backend routes, API endpoints, and a cloud database schema.
 
-3. Technology Used -
-i) Frontend: HTML5, CSS3 (Custom Grid/Flexbox Layouts, Premium Hover Animations), JavaScript (ES6+)
-ii) Backend Runtime: Node.js
-iii) Backend Framework: Express.js
-iv) Database: MongoDB
-v) Deployment & Hosting: Netlify (Frontend Hosting)
-vi) Version Control: Git & GitHub
+### 3. Technology Used -
+* **i) Frontend:** HTML5, CSS3 (Custom Grid/Flexbox Layouts, Premium Hover Animations), JavaScript (ES6+)
+* **ii) Backend Runtime:** Node.js
+* **iii) Backend Framework:** Express.js
+* **iv) Database:** MongoDB
+* **v) Deployment & Hosting:** Netlify (Frontend Hosting)
+* **vi) Version Control:** Git & GitHub
 
-4. Project Structure
+---
+
+### 4. Project Structure
+```text
 Travelling Enjoyment/
 │
 ├── .vscode/
@@ -38,16 +39,16 @@ Travelling Enjoyment/
 ├── server.js                  # Primary Express backend server entry point
 ├── script.js                  # Frontend interactivity & DOM manipulation
 │
-└── [Destination Pages]/               # Modular HTML files for location breakdowns
-    ├── index.html                     # Application landing page
-    ├── sinhagad_details.html          # Iconic Forts location template
-    ├── rajgad_details.html            # Iconic Forts location template
-    ├── lohagad_details.html           # Iconic Forts location template
-    ├── shaniwarwada_details.html      # Historical location template
-    ├── agakhan_palace.html            # Historical location template
-    ├── lonavala_khandala.html         # Hill station location template
-    ├── mulshi_dam.html                # Hill station location template
-    └── dagdusheth.html                # Spiritual location template
+└── [Destination Pages]/      # Modular HTML files for location breakdowns
+    ├── index.html             # Application landing page
+    ├── sinhagad_details.html  # Iconic Forts location template
+    ├── rajgad_details.html    # Iconic Forts location template
+    ├── lohagad_details.html   # Iconic Forts location template
+    ├── shaniwarwada_details.html # Historical location template
+    ├── agakhan_palace.html    # Historical location template
+    ├── lonavala_khandala.html # Hill station location template
+    ├── mulshi_dam.html        # Hill station location template
+    └── dagdusheth.html        # Spiritual location template
 
 5. Module Explanation -
 i) Frontend Core (HTML/CSS): Renders the static layouts and coordinates custom styling, modern typography, and hover states for the visual elements.
